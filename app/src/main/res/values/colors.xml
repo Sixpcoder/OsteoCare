@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_page">#DEEBF7</color>
+    <color name="primary_blue">#4A85D6</color>
+    <color name="primary_blue_pressed">#3A6FBF</color>
+    <color name="navy">#1F3864</color>
+    <color name="text_gray">#5B6863</color>
+    <color name="icon_gray">#8A94A6</color>
+    <color name="banner_bg">#DCEAFB</color>
+    <color name="risk_moderate_bg">#FBE8C6</color>
+    <color name="risk_moderate_text">#D9892B</color>
+    <color name="confidence_track_bg">#DEEBF7</color>
+    <color name="input_stroke">#D7DEE8</color>
+    <color name="mobility_score_bg">#E7F0D2</color>
+    <color name="mobility_score_text">#7C9A3A</color>
+    <color name="input_stroke_focused">#4A85D6</color>
+    <color name="hospital_icon_bg">#DCEAFB</color>
+    <color name="instruction_banner_bg">#FBE8C6</color>
+    <color name="divider_light">#E5EAF0</color>
+    <color name="error_red">#C0392B</color>
+    <color name="button_disabled">#B9C6DC</color>
+    <color name="risk_high_bg">#FBE0C6</color>
+    <color name="risk_high_text">#C1481F</color>
+    <color name="icon_circle_on_primary">#334A85D6</color>
+    <color name="risk_low_bg">#DCEAC1</color>
+    <color name="risk_low_text">#5A7A1E</color>
+    <color name="risk_urgent_bg">#D94F3D</color>
+    <color name="risk_urgent_text">#FFFFFF</color>
+    <color name="list_item_selected_bg">#DCEAFB</color>
+    <color name="search_bar_stroke">#D7DEE8</color>
+    <color name="icon_circle_light_blue">#1F4A85D6</color>
+    <color name="sync_dot_green">#8BC34A</color>
+</resources>

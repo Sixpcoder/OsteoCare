@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">osteoCare</string>
+    <string name="app_name_title">SandhiSathi</string>
+    <string name="app_tagline">AI-assisted joint health screening</string>
+    <string name="label_phone_id">Phone number or worker ID</string>
+    <string name="hint_phone_id">Enter phone number or ID</string>
+    <string name="label_pin">PIN or password</string>
+    <string name="hint_pin">Enter your PIN</string>
+    <string name="desc_hospital_icon">Health centre icon</string>
+    <string name="desc_print_icon">Print icon</string>
+    <string name="desc_download_icon">Download icon</string>
+    <string name="forgot_pin">Forgot PIN?</string>
+    <string name="btn_login">Login</string>
+    <string name="footer_note">For authorized health workers only</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="desc_add_patient">Add new patient icon</string>
+    <string name="desc_back">Back</string>
+    <string name="desc_mic">Record consent icon</string>
+    <string name="desc_search">Search icon</string>
+    <string name="desc_chevron">Open record</string>
+    <string name="desc_fab_add">Add new patient screening</string>
+    <string name="desc_result_check">Screening result check icon</string>
+    <string name="desc_why_result">Why this result icon</string>
+    <string name="desc_shield_check">Confirmed factor icon</string>
+    <string name="desc_check_records">Check previous records icon</string>
+    <string name="error_pin_length">PIN must be at least 4 digits</string>
+    <string name="today_at_a_glance">Today at a glance</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="view_referral_slip">View referral slip</string>
+
+</resources>
