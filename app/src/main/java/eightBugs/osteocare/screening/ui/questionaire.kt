@@ -19,12 +19,9 @@ class questionaire : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_questionaire)
 
-        // --------------------------------------------------
-// BMI (auto-calculated from height/weight)
-// --------------------------------------------------
-        val heightInput = findViewById<android.widget.EditText>(R.id.et_height_cm)
-        val weightInput = findViewById<android.widget.EditText>(R.id.et_weight_kg)
-        val bmiText = findViewById<TextView>(R.id.tv_bmi_value)
+        val heightInput = findViewById<android.widget.EditText>(R.id.et_height_cma)
+        val weightInput = findViewById<android.widget.EditText>(R.id.et_weight_kga)
+        val bmiText = findViewById<TextView>(R.id.tv_bmi_valuea)
 
         val bmiWatcher = object : android.text.TextWatcher {
             override fun afterTextChanged(s: android.text.Editable?) {
@@ -239,10 +236,10 @@ class questionaire : AppCompatActivity() {
         )
         // Previous joint injury
         val previousInjuryYes =
-            findViewById<android.widget.Button>(R.id.btn_previous_injury_yes)
+            findViewById<android.widget.Button>(R.id.btn_previous_injury_yesa)
 
         val previousInjuryNo =
-            findViewById<android.widget.Button>(R.id.btn_previous_injury_no)
+            findViewById<android.widget.Button>(R.id.btn_previous_injury_noa)
 
         previousInjuryYes.setOnClickListener {
             previousInjuryYes.setBackgroundResource(R.drawable.bg_toggle_selected)
@@ -262,10 +259,10 @@ class questionaire : AppCompatActivity() {
 
         // Family history of joint problems
         val familyHistoryYes =
-            findViewById<android.widget.Button>(R.id.btn_family_history_yes)
+            findViewById<android.widget.Button>(R.id.btn_family_history_yesa)
 
         val familyHistoryNo =
-            findViewById<android.widget.Button>(R.id.btn_family_history_no)
+            findViewById<android.widget.Button>(R.id.btn_family_history_noa)
 
         familyHistoryYes.setOnClickListener {
             familyHistoryYes.setBackgroundResource(R.drawable.bg_toggle_selected)
@@ -285,8 +282,8 @@ class questionaire : AppCompatActivity() {
         // --------------------------------------------------
 // Diabetes
 // --------------------------------------------------
-        val diabetesYes = findViewById<Button>(R.id.btn_diabetes_yes)
-        val diabetesNo = findViewById<Button>(R.id.btn_diabetes_no)
+        val diabetesYes = findViewById<Button>(R.id.btn_diabetes_yesa)
+        val diabetesNo = findViewById<Button>(R.id.btn_diabetes_noa)
 
         diabetesYes.setOnClickListener {
             diabetes = true
@@ -305,9 +302,9 @@ class questionaire : AppCompatActivity() {
         }
 
         // Analyse and view result
-        findViewById<android.view.View>(R.id.btn_analyse_result)
+        findViewById<android.view.View>(R.id.btn_analyse_resulta)
             .setOnClickListener {
-                startActivity(Intent(this, result::class.java))
+                startActivity(Intent(this, movement_test::class.java))
             }
     }
     private fun updateMobilityScore() {

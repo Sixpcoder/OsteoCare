@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Previous records"
+            android:text="@string/previous_records"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -69,7 +69,7 @@
             android:layout_weight="1"
             android:layout_marginStart="10dp"
             android:background="@null"
-            android:hint="Search by patient name or village"
+            android:hint="@string/search_by_patient_name_or_village"
             android:textColorHint="@color/icon_gray"
             android:textColor="@color/black"
             android:textSize="16sp"

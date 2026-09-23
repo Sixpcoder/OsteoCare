@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Referral slip"
+            android:text="@string/referral_slip"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -93,7 +93,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Community Health Centre"
+                        android:text="@string/community_health_centre"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -102,7 +102,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Orthopaedic consultation"
+                        android:text="@string/orthopaedic_consultation"
                         android:textColor="@color/text_gray"
                         android:textSize="14sp" />
 
@@ -133,7 +133,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Patient"
+                        android:text="@string/patient"
                         android:textColor="@color/text_gray"
                         android:textSize="14sp" />
 
@@ -141,7 +141,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="New patient"
+                        android:text="@string/new_patient"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -157,7 +157,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Risk tier"
+                        android:text="@string/risk_tier"
                         android:textColor="@color/text_gray"
                         android:textSize="14sp" />
 
@@ -166,7 +166,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Moderate"
+                        android:text="@string/moderate"
                         android:textColor="@color/risk_moderate_text"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -191,7 +191,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Screening date"
+                        android:text="@string/screening_date"
                         android:textColor="@color/text_gray"
                         android:textSize="14sp" />
 
@@ -216,7 +216,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Worker"
+                        android:text="@string/worker"
                         android:textColor="@color/text_gray"
                         android:textSize="14sp" />
 
@@ -225,7 +225,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Sunita Devi"
+                        android:text="@string/bheem"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -242,7 +242,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/bg_instruction_banner"
                 android:padding="16dp"
-                android:text="Please assess knee pain, reduced mobility and movement asymmetry within 2 weeks."
+                android:text="@string/please_assess_knee_pain_reduced_mobility_and_movement_asymmetry_within_2_weeks"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:lineSpacingExtra="3dp" />
@@ -276,7 +276,7 @@
             android:drawablePadding="10dp"
             android:gravity="center"
             android:paddingVertical="16dp"
-            android:text="Print slip"
+            android:text="@string/print_slip"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -297,7 +297,7 @@
             android:elevation="0dp"
             android:gravity="center"
             android:paddingVertical="16dp"
-            android:text="Save copy"
+            android:text="@string/save_copy"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -315,7 +315,7 @@
             android:background="?attr/selectableItemBackground"
             android:gravity="center"
             android:padding="6dp"
-            android:text="Back to home"
+            android:text="@string/back_to_home"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />

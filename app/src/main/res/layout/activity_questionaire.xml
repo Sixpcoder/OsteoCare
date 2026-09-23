@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Screening questions"
+            android:text="@string/screening_questions"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -62,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patient assessment"
+                android:text="@string/patient_assessment"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:text="Step 2 of 3"
+                android:text="@string/step_2_of_3"
                 android:textColor="@color/text_gray"
                 android:textSize="14sp" />
 
@@ -132,7 +132,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="Symptoms"
+                        android:text="@string/symptoms"
                         android:textColor="@color/navy"
                         android:textSize="19sp"
                         android:textStyle="bold" />
@@ -148,7 +148,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pain score"
+                        android:text="@string/pain_score"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -160,7 +160,7 @@
                         android:layout_alignParentEnd="true"
                         android:background="@drawable/circle_bg_light_blue"
                         android:gravity="center"
-                        android:text="6"
+                        android:text="@string/_6"
                         android:textColor="@color/primary_blue"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -183,7 +183,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0 Easy"
+                        android:text="@string/_0_easy"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -191,7 +191,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="10 Severe"
+                        android:text="@string/_10_severe"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -202,7 +202,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Morning stiffness"
+                    android:text="@string/morning_stiffness"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -219,7 +219,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Under 30 min" />
+                        android:text="@string/under_30_min" />
 
                     <Button
                         android:id="@+id/btn_stiffness_30_or_more"
@@ -228,7 +228,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
-                        android:text="30 min or more" />
+                        android:text="@string/_30_min_or_more" />
 
                 </LinearLayout>
 
@@ -237,7 +237,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Joint swelling"
+                    android:text="@string/joint_swelling"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -254,7 +254,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="No" />
+                        android:text="@string/no" />
 
                     <Button
                         android:id="@+id/btn_swelling_yes"
@@ -263,7 +263,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
-                        android:text="Yes" />
+                        android:text="@string/yes" />
 
                 </LinearLayout>
 
@@ -295,7 +295,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="Physical activity and function"
+                        android:text="@string/physical_activity_and_function"
                         android:textColor="@color/navy"
                         android:textSize="19sp"
                         android:textStyle="bold" />
@@ -327,7 +327,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:text="Body measurements"
+                            android:text="@string/body_measurements"
                             android:textColor="@color/navy"
                             android:textSize="19sp"
                             android:textStyle="bold" />
@@ -350,18 +350,18 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Height (cm)"
+                                android:text="@string/height_cm"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
                             <EditText
-                                android:id="@+id/et_height_cm"
+                                android:id="@+id/et_height_cma"
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/bg_input_field"
-                                android:hint="e.g. 165"
+                                android:hint="@string/e_g_165"
                                 android:textColorHint="@color/text_gray"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
@@ -381,18 +381,18 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Weight (kg)"
+                                android:text="@string/weight_kg"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
                             <EditText
-                                android:id="@+id/et_weight_kg"
+                                android:id="@+id/et_weight_kga"
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/bg_input_field"
-                                android:hint="e.g. 68"
+                                android:hint="@string/e_g_68"
                                 android:textColorHint="@color/text_gray"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
@@ -416,12 +416,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Body Mass Index (BMI)"
+                            android:text="@string/body_mass_index_bmi"
                             android:textColor="@color/text_gray"
                             android:textSize="14sp" />
 
                         <TextView
-                            android:id="@+id/tv_bmi_value"
+                            android:id="@+id/tv_bmi_valuea"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
@@ -434,7 +434,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Auto-calculated"
+                            android:text="@string/auto_calculated"
                             android:textColor="@color/text_gray"
                             android:textSize="13sp" />
 
@@ -445,7 +445,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:text="Diabetes"
+                        android:text="@string/diabetes"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -457,15 +457,15 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/btn_diabetes_yes"
+                            android:id="@+id/btn_diabetes_yesa"
                             style="@style/ToggleButtonUnselected"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Yes" />
+                            android:text="@string/yesquestionaire" />
 
                         <Button
-                            android:id="@+id/btn_diabetes_no"
+                            android:id="@+id/btn_diabetes_noa"
                             style="@style/ToggleButtonSelected"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -483,7 +483,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Physical activity level"
+                    android:text="@string/physical_activity_level"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -500,7 +500,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Light" />
+                        android:text="@string/light" />
 
                     <Button
                         android:id="@+id/btn_activity_moderate"
@@ -509,7 +509,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
-                        android:text="Moderate" />
+                        android:text="@string/moderate" />
 
                     <Button
                         android:id="@+id/btn_activity_heavy"
@@ -518,7 +518,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
-                        android:text="Heavy" />
+                        android:text="@string/heavy" />
 
                 </LinearLayout>
 
@@ -531,7 +531,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Walking difficulty"
+                        android:text="@string/walking_difficulty"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -566,7 +566,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0 Easy"
+                        android:text="@string/_0_easyquestionaire"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -574,7 +574,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="10 Severe"
+                        android:text="@string/_10_severequestionaire"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -589,7 +589,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Stair difficulty"
+                        android:text="@string/stair_difficulty"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -624,7 +624,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0 Easy"
+                        android:text="@string/_0_easy"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -632,7 +632,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="10 Severe"
+                        android:text="@string/_10_severe"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -647,7 +647,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Squatting difficulty"
+                        android:text="@string/squatting_difficulty"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -682,7 +682,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0 Easy"
+                        android:text="@string/_0_easy"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -690,7 +690,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:text="10 Severe"
+                        android:text="@string/_10_severe"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -708,7 +708,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mobility score"
+                        android:text="@string/mobility_score"
                         android:textColor="@color/text_gray"
                         android:textSize="14sp" />
 
@@ -726,7 +726,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Auto-calculated"
+                        android:text="@string/auto_calculated"
                         android:textColor="@color/text_gray"
                         android:textSize="13sp" />
 
@@ -744,7 +744,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="History"
+                    android:text="@string/history"
                     android:textColor="@color/navy"
                     android:textSize="19sp"
                     android:textStyle="bold" />
@@ -754,7 +754,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="22dp"
-                    android:text="Previous joint injury"
+                    android:text="@string/previous_joint_injury"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -766,21 +766,21 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/btn_previous_injury_yes"
+                        android:id="@+id/btn_previous_injury_yesa"
                         style="@style/ToggleButtonUnselected"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Yes" />
+                        android:text="@string/yes" />
 
                     <Button
-                        android:id="@+id/btn_previous_injury_no"
+                        android:id="@+id/btn_previous_injury_noa"
                         style="@style/ToggleButtonSelected"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
-                        android:text="No" />
+                        android:text="@string/no" />
 
                 </LinearLayout>
 
@@ -789,7 +789,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Family history of joint problems"
+                    android:text="@string/family_history_of_joint_problems"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -801,21 +801,21 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/btn_family_history_yes"
+                        android:id="@+id/btn_family_history_yesa"
                         style="@style/ToggleButtonUnselected"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Yes" />
+                        android:text="@string/yes" />
 
                     <Button
-                        android:id="@+id/btn_family_history_no"
+                        android:id="@+id/btn_family_history_noa"
                         style="@style/ToggleButtonSelected"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
-                        android:text="No" />
+                        android:text="@string/no" />
 
                 </LinearLayout>
 
@@ -829,12 +829,12 @@
             </LinearLayout>
             <!-- Analyse and view result button -->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_analyse_result"
+                android:id="@+id/btn_analyse_resulta"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="8dp"
-                android:text="Analyse and view result"
+                android:text="@string/proceed_with_test"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold"

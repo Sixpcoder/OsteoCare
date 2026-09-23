@@ -1,5 +1,6 @@
 package eightBugs.osteocare.screening.ui
 
+import android.content.Intent
 import eightBugs.osteocare.R
 import android.net.Uri
 import android.os.Bundle
@@ -186,13 +187,13 @@ class movement_test : AppCompatActivity() {
                 TestType.CHAIR_STAND
 
             tvTestName.text =
-                "Chair Stand"
+                getString(R.string.chair_stand)
 
             tvTestCaption.text =
-                "Sit down and stand up naturally"
+                getString(R.string.sit_down_and_stand_up_naturally)
 
             tvRecordCaption.text =
-                "Record chair stand"
+                getString(R.string.record_chair_stand)
         }
 
 
@@ -383,11 +384,6 @@ class movement_test : AppCompatActivity() {
         return frames
     }
 
-
-    // --------------------------------------------------
-    // Results
-    // --------------------------------------------------
-
     private fun displayResults(
         result: MovementResult
     ) {
@@ -395,10 +391,8 @@ class movement_test : AppCompatActivity() {
         tvQualityBadge.text =
             "Analysis complete"
 
-
         tvRepCount.text =
             "Reps: ${result.repetitions}"
-
 
         tvTimer.text =
             String.format(
@@ -406,28 +400,27 @@ class movement_test : AppCompatActivity() {
                 result.sitToStandTime
             )
 
-
         val message =
             """
-            
-            Frames analyzed: ${result.analyzedFrames}
-            
-            LEFT KNEE ROM
-            %.1f°
-            
-            RIGHT KNEE ROM
-            %.1f°
-            
-            ASYMMETRY
-            %.1f%%
-            
-            SIT-TO-STAND
-            %.2f seconds
-            
-            REPETITIONS
-            %d
-            
-            """.trimIndent().format(
+        
+        Frames analyzed: ${result.analyzedFrames}
+        
+        LEFT KNEE ROM
+        %.1f°
+        
+        RIGHT KNEE ROM
+        %.1f°
+        
+        ASYMMETRY
+        %.1f%%
+        
+        SIT-TO-STAND
+        %.2f seconds
+        
+        REPETITIONS
+        %d
+        
+        """.trimIndent().format(
                 result.leftRom,
                 result.rightRom,
                 result.asymmetry,
@@ -435,20 +428,53 @@ class movement_test : AppCompatActivity() {
                 result.repetitions
             )
 
-
         AlertDialog.Builder(this)
-            .setTitle(
-                "Movement Analysis"
-            )
-            .setMessage(
-                message
-            )
-            .setPositiveButton(
-                "OK",
-                null
-            )
+            .setTitle("Movement Analysis")
+            .setMessage(message)
+            .setNegativeButton("Close", null)
+            .setPositiveButton("Show Result") { _, _ ->
+
+                val intent =
+                    Intent(
+                        this,
+                        result::class.java
+                    )
+
+                intent.putExtra(
+                    "leftRom",
+                    result.leftRom
+                )
+
+                intent.putExtra(
+                    "rightRom",
+                    result.rightRom
+                )
+
+                intent.putExtra(
+                    "asymmetry",
+                    result.asymmetry
+                )
+
+                intent.putExtra(
+                    "sitToStandTime",
+                    result.sitToStandTime
+                )
+
+                intent.putExtra(
+                    "repetitions",
+                    result.repetitions
+                )
+
+                intent.putExtra(
+                    "analyzedFrames",
+                    result.analyzedFrames
+                )
+
+                startActivity(intent)
+            }
             .show()
     }
+
 
     override fun onDestroy() {
 

@@ -7,7 +7,7 @@ import android.view.View
 import com.google.mlkit.vision.pose.Pose
 import com.google.mlkit.vision.pose.PoseLandmark
 
-class PoseOverlayViewML @JvmOverloads constructor(
+class PoseOverlayView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0

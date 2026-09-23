@@ -39,7 +39,7 @@ class newPatient : AppCompatActivity() {
             findViewById<EditText>(R.id.et_full_name)
 
         val age =
-            findViewById<EditText>(R.id.et_age)
+            findViewById<EditText>(R.id.et_agea)
 
         val phone =
             findViewById<EditText>(R.id.et_phone)

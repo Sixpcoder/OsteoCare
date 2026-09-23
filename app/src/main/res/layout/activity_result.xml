@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Screening result"
+            android:text="@string/screening_result"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -81,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
-                    android:text="Knee osteoarthritis screening"
+                    android:text="@string/knee_osteoarthritis_screening"
                     android:textColor="@color/text_gray"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -96,7 +96,7 @@
                     android:gravity="center_vertical"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="12dp"
-                    android:text="Moderate risk"
+                    android:text="@string/moderate_risk"
                     android:textColor="@color/risk_moderate_text"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -107,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     android:gravity="center"
-                    android:text="Follow up with the nearest health centre within 2 weeks."
+                    android:text="@string/follow_up_with_the_nearest_health_centre_within_2_weeks"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -138,7 +138,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="Why this result"
+                        android:text="@string/why_this_result"
                         android:textColor="@color/navy"
                         android:textSize="19sp"
                         android:textStyle="bold" />
@@ -164,7 +164,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="14dp"
                         android:layout_weight="1"
-                        android:text="Pain score is 6 out of 10"
+                        android:text="@string/pain_score_is_6_out_of_10"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
 
@@ -189,7 +189,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="14dp"
                         android:layout_weight="1"
-                        android:text="Stair and squat difficulty reported"
+                        android:text="@string/stair_and_squat_difficulty_reported"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
 
@@ -214,7 +214,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="14dp"
                         android:layout_weight="1"
-                        android:text="Movement showed mild asymmetry"
+                        android:text="@string/movement_showed_mild_asymmetry"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
 
@@ -238,7 +238,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Result confidence"
+                        android:text="@string/result_confidence"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />

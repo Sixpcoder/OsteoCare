@@ -37,7 +37,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="New patient"
+            android:text="@string/new_patient"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -76,7 +76,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Patient details"
+                    android:text="@string/patient_details"
                     android:textColor="@color/navy"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -86,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Full name"
+                    android:text="@string/full_name"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -98,7 +98,7 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/bg_edittext"
                     android:paddingHorizontal="16dp"
-                    android:hint="Enter full name"
+                    android:hint="@string/enter_full_name"
                     android:textColorHint="@color/text_gray"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -122,19 +122,19 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Age"
+                            android:text="@string/age"
                             android:textColor="@color/black"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/et_age"
+                            android:id="@+id/et_agea"
                             android:layout_width="match_parent"
                             android:layout_height="56dp"
                             android:layout_marginTop="8dp"
                             android:background="@drawable/bg_edittext"
                             android:paddingHorizontal="16dp"
-                            android:hint="Age"
+                            android:hint="@string/agehint"
                             android:textColorHint="@color/text_gray"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -152,7 +152,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Phone number"
+                            android:text="@string/phone_number"
                             android:textColor="@color/black"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -164,7 +164,7 @@
                             android:layout_marginTop="8dp"
                             android:background="@drawable/bg_edittext"
                             android:paddingHorizontal="16dp"
-                            android:hint="10-digit number"
+                            android:hint="@string/_10_digit_number"
                             android:textColorHint="@color/text_gray"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -178,7 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Sex"
+                    android:text="@string/sex"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -197,7 +197,7 @@
                         android:layout_marginEnd="8dp"
                         android:background="@drawable/bg_toggle_selected"
                         android:gravity="center"
-                        android:text="Female"
+                        android:text="@string/female"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -213,7 +213,7 @@
                         android:layout_marginStart="8dp"
                         android:background="@drawable/bg_toggle_unselected"
                         android:gravity="center"
-                        android:text="Male"
+                        android:text="@string/male"
                         android:textColor="@color/primary_blue"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -227,7 +227,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Village"
+                    android:text="@string/village"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -239,7 +239,7 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/bg_edittext"
                     android:paddingHorizontal="16dp"
-                    android:hint="Village name"
+                    android:hint="@string/village_name"
                     android:textColorHint="@color/text_gray"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -263,7 +263,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Block"
+                            android:text="@string/block"
                             android:textColor="@color/black"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -275,7 +275,7 @@
                             android:layout_marginTop="8dp"
                             android:background="@drawable/bg_edittext"
                             android:paddingHorizontal="16dp"
-                            android:hint="Block"
+                            android:hint="@string/blockhint"
                             android:textColorHint="@color/text_gray"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -293,7 +293,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="District"
+                            android:text="@string/district"
                             android:textColor="@color/black"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -305,7 +305,7 @@
                             android:layout_marginTop="8dp"
                             android:background="@drawable/bg_edittext"
                             android:paddingHorizontal="16dp"
-                            android:hint="District"
+                            android:hint="@string/districthint"
                             android:textColorHint="@color/text_gray"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -319,7 +319,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Occupation"
+                    android:text="@string/occupation"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -331,7 +331,7 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/bg_edittext"
                     android:paddingHorizontal="16dp"
-                    android:hint="e.g. Farm worker"
+                    android:hint="@string/e_g_farm_worker"
                     android:textColorHint="@color/text_gray"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -352,7 +352,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Patient consent"
+                    android:text="@string/patient_consent"
                     android:textColor="@color/navy"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -361,7 +361,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Record the patient saying they agree to this screening."
+
+                    android:text="@string/record_the_patient_saying_they_agree_to_this_screening"
                     android:textColor="@color/text_gray"
                     android:textSize="15sp" />
 
@@ -387,7 +388,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="Record consent"
+                        android:text="@string/record_consent"
                         android:textColor="@color/primary_blue"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -425,7 +426,7 @@
             android:layout_height="56dp"
             android:background="@drawable/bg_button_save"
             android:gravity="center"
-            android:text="Save and continue"
+            android:text="@string/save_and_continue"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold"

@@ -1,11 +1,15 @@
 package eightBugs.osteocare.authentication.ui
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import eightBugs.osteocare.MainActivity
 import eightBugs.osteocare.R
+import eightBugs.osteocare.screening.ui.movement_test
 
 class login : AppCompatActivity() {
 
@@ -14,6 +18,7 @@ class login : AppCompatActivity() {
 
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
+         val login=findViewById<Button>(R.id.btnLogin)
 
         ViewCompat.setOnApplyWindowInsetsListener(
             findViewById(android.R.id.content)
@@ -28,8 +33,10 @@ class login : AppCompatActivity() {
                 systemBars.right,
                 systemBars.bottom
             )
-
             insets
+        }
+        login.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }
