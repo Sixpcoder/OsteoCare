@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppSeekBar">
-        <item name="android:progressDrawable">@drawable/seekbar_track</item>
-        <item name="android:thumb">@drawable/seekbar_thumb</item>
+        <item name="android:progressDrawable">@drawable/seekbar_tracka</item>
+        <item name="android:thumb">@drawable/seekbar_thumba</item>
         <item name="android:maxHeight">6dp</item>
         <item name="android:minHeight">6dp</item>
         <item name="android:paddingStart">0dp</item>
@@ -17,6 +17,7 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">15sp</item>
+
         <item name="android:paddingTop">14dp</item>
         <item name="android:paddingBottom">14dp</item>
         <item name="android:elevation">0dp</item>
@@ -26,6 +27,6 @@
     <style name="ToggleButtonUnselected" parent="ToggleButtonSelected">
         <item name="android:background">@drawable/bg_toggle_unselected</item>
         <item name="android:textColor">@color/primary_blue</item>
-        
+
     </style>
 </resources>

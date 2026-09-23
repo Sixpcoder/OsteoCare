@@ -27,7 +27,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_back_arrow"
+            android:src="@drawable/ic_arrow_back_white"
             android:contentDescription="@string/desc_back" />
 
         <TextView
@@ -85,7 +85,7 @@
             android:layout_marginTop="10dp"
             android:max="100"
             android:progress="65"
-            android:progressDrawable="@drawable/seekbar_track" />
+            android:progressDrawable="@drawable/seekbar_tracka" />
 
     </LinearLayout>
 

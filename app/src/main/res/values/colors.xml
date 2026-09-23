@@ -6,6 +6,8 @@
     <color name="primary_blue">#4A85D6</color>
     <color name="primary_blue_pressed">#3A6FBF</color>
     <color name="navy">#1F3864</color>
+    <color name="record_ring_bg">#33D94F3D</color>
+    <color name="scrim_black">#66000000</color>
     <color name="text_gray">#5B6863</color>
     <color name="icon_gray">#8A94A6</color>
     <color name="banner_bg">#DCEAFB</color>

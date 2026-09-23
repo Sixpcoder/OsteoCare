@@ -5,6 +5,17 @@
     <string name="label_phone_id">Phone number or worker ID</string>
     <string name="hint_phone_id">Enter phone number or ID</string>
     <string name="label_pin">PIN or password</string>
+    <string name="btn_chair_stand">Chair stand</string>
+    <string name="btn_walk">Walk</string>
+    <string name="btn_knee_bend">Knee bend</string>
+    <string name="quality_good">Good framing</string>
+    <string name="quality_move_closer">Move closer</string>
+    <string name="quality_not_visible">Stand fully in frame</string>
+    <string name="caption_chair_stand">Keep the full body in frame</string>
+    <string name="caption_walk">Walk toward the camera</string>
+    <string name="caption_knee_bend">Bend the knee slowly</string>
+    <string name="tap_to_record">Tap to record chair stand</string>
+    <string name="tap_to_stop">Tap to stop recording</string>
     <string name="hint_pin">Enter your PIN</string>
     <string name="desc_hospital_icon">Health centre icon</string>
     <string name="desc_print_icon">Print icon</string>

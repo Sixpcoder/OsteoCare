@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- ===== Top app bar (navy) ===== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBara"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/navy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBacka"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_arrow_back_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTopBarTitlea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Movement test"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnBacka"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ===== Step header + progress ===== -->
+    <TextView
+        android:id="@+id/tvSectionLabela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Movement analysis"
+        android:textColor="@color/navy"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBara" />
+
+    <TextView
+        android:id="@+id/tvStepCounta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Step 3 of 3"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tvSectionLabela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvSectionLabela" />
+
+    <SeekBar
+        android:id="@+id/progressStepsa"
+        style="@style/AppSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:progress="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSectionLabela" />
+
+    <!-- ===== Toggle row: Chair stand / Walk / Knee bend ===== -->
+    <LinearLayout
+        android:id="@+id/toggleRowa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressStepsa">
+
+        <Button
+            android:id="@+id/btnToggleChairStanda"
+            style="@style/ToggleButtonSelected"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="@string/btn_chair_stand" />
+
+        <Button
+            android:id="@+id/btnToggleWalka"
+            style="@style/ToggleButtonUnselected"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:text="@string/btn_walk" />
+
+        <Button
+            android:id="@+id/btnToggleKneeBenda"
+            style="@style/ToggleButtonUnselected"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="@string/btn_knee_bend" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dividerBelowTogglea"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/divider_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggleRowa" />
+
+    <!-- ===== Camera / pose area (dark navy card) ===== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cameraAreaa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/navy"
+        android:clipChildren="true"
+        app:layout_constraintBottom_toTopOf="@id/bottomControls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dividerBelowTogglea">
+
+        <!-- Live camera preview -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewViewa"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Grid pattern drawn on top of the preview (or shown alone before camera starts) -->
+        <eightBugs.osteocare.screening.ui.GridBackgroundView
+            android:id="@+id/gridOverlaya"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/previewViewa"
+            app:layout_constraintEnd_toEndOf="@id/previewViewa"
+            app:layout_constraintStart_toStartOf="@id/previewViewa"
+            app:layout_constraintTop_toTopOf="@id/previewViewa" />
+
+        <!-- Skeleton overlay: shows guide pose when idle, live pose once detected -->
+        <eightBugs.osteocare.screening.ui.PoseOverlayView
+            android:id="@+id/poseOverlaya"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/previewViewa"
+            app:layout_constraintEnd_toEndOf="@id/previewViewa"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/previewViewa"
+            app:layout_constraintTop_toTopOf="@id/previewViewa"
+            app:layout_constraintVertical_bias="0.0" />
+        <!-- Quality badge, top-left -->
+        <TextView
+            android:id="@+id/tvQualityBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="@drawable/bg_badge_good"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="8dp"
+            android:text="@string/quality_good"
+            android:textColor="@color/mobility_score_text"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Rep count / timer badges: hidden until recording starts -->
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="@drawable/bg_badge_good"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="00:00"
+            android:textColor="@color/navy"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRepCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/bg_badge_good"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="Reps: 0"
+            android:textColor="@color/navy"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Bottom scrim + caption -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:background="@drawable/scrim_bottom_gradient"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:text="@string/btn_chair_stand"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTestCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="@string/caption_chair_stand"
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ===== Bottom white controls: dots, record button, caption ===== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomControls"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.185"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- ===== Progress dots ===== -->
+        <LinearLayout
+            android:id="@+id/dotsRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/dot1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/dot_active" />
+
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="6dp"
+                android:background="@drawable/dot_active" />
+
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/dot_inactive" />
+
+        </LinearLayout>
+
+
+        <!-- ===== Centered record button ===== -->
+        <FrameLayout
+            android:id="@+id/recordButtonContainer"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dotsRow">
+
+            <View
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/bg_record_ring" />
+
+            <ImageButton
+                android:id="@+id/btnRecord"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_record_circle"
+                android:contentDescription="@string/tap_to_record"
+                android:padding="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_video_white" />
+
+        </FrameLayout>
+
+
+        <!-- ===== Gallery button to the right of record ===== -->
+        <ImageButton
+            android:id="@+id/btnGallery"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/bg_record_ring"
+            android:contentDescription="Select video from gallery"
+            android:padding="14dp"
+            android:src="@drawable/ic_gallery"
+            app:layout_constraintBottom_toBottomOf="@id/recordButtonContainer"
+            app:layout_constraintStart_toEndOf="@id/recordButtonContainer"
+            app:layout_constraintTop_toTopOf="@id/recordButtonContainer" />
+
+
+        <!-- ===== Record caption ===== -->
+        <TextView
+            android:id="@+id/tvRecordCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/tap_to_record"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recordButtonContainer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
